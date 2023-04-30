@@ -1,0 +1,522 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+#navbar{
+    width: 100vw;
+    height: 110px;
+    margin: 0;
+    display: flex;
+    background-color: #0F3542;
+    box-shadow: 5px 10px 8px #5f5d5d;
+    z-index: 0;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+.logo img{
+    width: 50%;
+    height: 90px;
+    object-fit: fill;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#navbar ul{
+    width: 65%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+#navbar ul li{
+    padding: 15px;
+    margin: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 16px;
+}
+
+#navbar ul li:nth-child(3){
+    color: rgb(223, 0, 0);
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#navbar a{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    left: -15px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.banner{
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-shadow: 5px 5px 5px #878080;
+}
+
+.banner img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.banner p:nth-child(2){
+    font-size: 40px;
+    font-weight: 200;
+    padding-left: 20px;
+    position: absolute;
+    top: 320px;
+    left: 45px;
+    color: rgb(226, 153, 19);
+    padding-bottom: 10px;
+}
+
+.banner p:nth-child(3){
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 20px;
+    position: absolute;
+    top: 365px;
+    left: 52px;
+    color: rgb(243, 197, 112);   
+}
+
+.intro{
+    width: 100vw;
+    height: 25vh;
+    background-color: #F2E8DC;
+    position: relative;
+}
+
+.intro p{
+    top: 35%;
+    left: 23%;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    text-align: center;
+    text-justify: center;
+}
+
+.menu{
+    width: 100vw;
+    height: 550px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.menu_items{
+    position: relative;
+    height: inherit;
+} 
+
+.content_menu{
+    position: absolute; 
+    top: 50%;
+    left: 35%;
+    text-align: center;
+    text-justify: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white
+}
+
+.content_menu span{
+    font-size: 18px;
+}
+
+.content_menu a{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.content_menu a:nth-child(3){
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    cursor: pointer;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+.content_menu a:nth-child(3):hover{
+    scale: 1.2;
+    transition: 2s;
+}
+
+.menu_items img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.brand{
+    display: flex; 
+    flex-direction: column;
+    width: 100vw;
+    min-height: 300px;
+    overflow-x: hidden;
+}
+
+.brand span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.brand div{
+    display: flex; 
+    flex-direction: row;
+    width: 3000px;
+    height: 230px;
+}
+
+.brand a{
+    width: 500px;
+    height: inherit;
+    padding-left: 25px;
+}
+
+.brand a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation-name: run;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+
+@keyframes run {
+    0% {left: 0px;}
+    25% {left: -200px;}
+    50% {left: -400px;}
+    75% {left: -800px;}
+    100% {left: -1400px;}
+}
+
+.intro_list{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 800px;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+}
+
+.intro_list div{
+    width: inherit;
+    position: relative;
+}
+
+.intro_list div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: next;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction:initial;
+    position: relative;
+}
+
+.text_intro {
+    top: -50%;
+    left: -5%;
+    text-align: center;
+    text-justify: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.text_intro span{
+    font-size: 30px;
+    font-weight: 600;
+    color: bisque;
+}
+
+.text_intro a{
+    margin-left: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: transparent;
+    color:bisque;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+@keyframes next{
+    0% {left: 0px;}
+    25% {left: -100vw;}
+    75% {left: -200vw;}
+    100% {left: -300vw;}
+}
+
+.text_intro a:hover{
+    background-color: rgb(55, 126, 55);
+    color: white;
+    transition: 1s;
+}
+
+.characteristic{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #BFA378;
+    color: black;
+    padding-top: 60px;
+    position: relative;
+}
+
+.characteristic h2{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.charac_list{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    text-justify: center;
+}
+
+.charac_items{
+    width: 250px;
+    padding: 15px;
+}
+
+.charac_items a{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.charac_items p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.button{
+    border: 2px solid grey;
+    width: 180px;
+    height: 50px;
+    top: 73%;
+    left: 44%;
+    position: absolute;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+    width: 100%; 
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+.button a:hover{
+    color: white;
+    background-color: #1C292C;
+    transition: 1s ease-out;
+}
+
+.products {
+    width: 100vw;
+    height: 1200px;
+    background-color: #f2e8dc;
+    position: relative;
+}
+
+.products h2{
+    color: black;
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.product_list{
+    height: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.product_item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.product_item img{
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+.product_info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.product_info a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.product_info span{
+    font-size: 18px;
+}
+
+.product_info div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    cursor:default;
+}
+
+.feature_list{
+    display: flex;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.feature_item{
+    padding: 0px 153px;
+    animation-name: runFeature;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:initial;
+    position: relative;
+    cursor: pointer;
+}
+
+.feature_item:nth-child(1){
+    padding-left: 0px;
+}
+
+@keyframes runFeature {
+    5% {left: 0px;}
+    50% {left: -650px;}
+    90% {left: -1200px;}
+    95% {left: 0px;}
+}
+
+.contact{
+    width: 100vw;
+    height: 60px;
+    border-top: 2px solid grey;
+    border-bottom:2px solid grey;
+    background-color: #f2e8dc;
+}
+
+.contact_list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    text-justify: center;
+}
+
+.contact_list span{
+    height: 10px;
+    text-align: center;
+    text-justify: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: grey;
+}
+
+.icon{
+    width: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.contact_list div:nth-child(3){
+    width: 18vw;
+    height: 20px;
+    margin-left: 28%;
+    margin-top: 14px;
+    padding: 5px;
+    border: 2px solid grey;
+}
+
+.contact_list div:nth-child(3) a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contact_list div:nth-child(3) a:hover{
+    color: white;
+    background-color: #1C292C;
+    transition: 1s ease-out;
+}
