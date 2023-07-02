@@ -28,27 +28,16 @@
         <div class="logo">
             <img src="./Image/logo.png" alt="">
         </div>
-        <ul>
-            <li><i class="fa-solid fa-house-chimney" style="padding-right: 10px;"></i>Home</li>
-            <li><i class="fa-solid fa-store" style="padding-right: 10px;"></i>Store</li>
-            <li>Sale</li>
-            <li><i class="fa-sharp fa-regular fa-address-card" style="padding-right: 10px;"></i>About</li>
-            <li><i class="fa-solid fa-arrow-right-from-bracket" style="padding-right: 10px;"></i>Login/Logout</li>
-            <li><i class="fa-solid fa-bag-shopping" style="padding-right: 10px;"></i>Cart</li>
+        <ul id="primary-navigation" class="taskbar">
+            <li><i class="fa-solid fa-house-chimney" style="padding-right: 10px;"></i><a href="home.html">Home</a></li>
+            <li><i class="fa-solid fa-store" style="padding-right: 10px;"></i><a href="store.html">Store</a></li>
+            <li><a href="sale.html" id="sale">Sale</a></li>
+            <li><i class="fa-sharp fa-regular fa-address-card" style="padding-right: 10px;"></i><a href="about.html">About</a></li>
+            <li><i class="fa-solid fa-arrow-right-from-bracket" style="padding-right: 10px;"></i><a href="./Menu/log/log.html">Login/Logout</a></li>
+            <li><i class="fa-solid fa-bag-shopping" style="padding-right: 10px;"></i><a href="cart.html">Cart</a></li>
         </ul>
-        <button class="me-nu"><i class="fa-solid fa-bars"></i></button>
-        <!-- <div class="response">
-            <ul>
-                <li><i class="fa-solid fa-house-chimney" style="padding-right: 10px;"></i>Home</li>
-                <li><i class="fa-solid fa-store" style="padding-right: 10px;"></i>Store</li>
-                <li>Sale</li>
-                <li><i class="fa-sharp fa-regular fa-address-card" style="padding-right: 10px;"></i>About</li>
-                <li><i class="fa-solid fa-arrow-right-from-bracket" style="padding-right: 10px;"></i>Login/Logout</li>
-                <li><i class="fa-solid fa-bag-shopping" style="padding-right: 10px;"></i>Cart</li>
-            </ul>
-        </div> -->
+        <button class="me-nu" id="nav"><i class="fa-solid fa-bars" id="Toggle"></i></button>
     </div>
-   
     <div class="banner">
         <img src="./Image/banner_logo.jpg" alt="">
         <p>Your mind follow your house</p>
@@ -362,5 +351,6 @@
             <p>© 2023 Spotti Srl. Viale Piave 27, 20129 Milano – P.iva IT12645280152</p>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
