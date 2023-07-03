@@ -201,7 +201,7 @@
     flex-direction: column;
     width: 100vw;
     min-height: 300px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .brand span{
@@ -216,7 +216,6 @@
     flex-direction: row;
     width: 3000px;
     height: 230px;
-    overflow: hidden;
 }
 
 .brand a{
@@ -539,14 +538,14 @@
 .item span{
     height: 70px;
     color: #f2e8dc;
-    font-size: 15px;                                                               font-family: 'Neue Haas Grotesk Text', sans-serif;
+    font-size: 15px;                                                               
     font-family: 'Neue Haas Grotesk Text', sans-serif;
 }
 
 .item p{
     color: #f2e8dc;
     padding-top: 10px;
-    font-size: 12px;                                                               font-family: 'Neue Haas Grotesk Text', sans-serif;
+    font-size: 12px;                                                            
     font-family: 'Neue Haas Grotesk Text', sans-serif;   
 }
 
@@ -695,6 +694,7 @@
     text-align: center;
     text-justify: center;
     padding: 40px 0px;
+    position: relative;
 }
 
 .label h3{
@@ -709,7 +709,10 @@
     width: 200px;
     height: 80px; 
     display: flex;
-    margin-left: 39%;
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    transform: translate(-50%, -50%);
 }
 
 .label_logo img{
@@ -735,7 +738,7 @@
 }
 
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     .logo img{
         width: 90%;
@@ -755,7 +758,7 @@
         padding-top: 70px;
         align-items: flex-start;
         justify-content:flex-start;
-        inset: 0 0 0 70%;
+        inset: 0 0 0 53%;
        visibility: hidden;
     }
 
@@ -801,7 +804,7 @@
         font-weight: 500;
         top: 353px;
         left: 34px;
-    }  
+    } 
 
     .intro p{
         font-size: 16px;
@@ -956,20 +959,22 @@
     }
     
     .label_logo{
-        width: 200px;
+        width: 100px;
         height: 80px; 
         display: flex;
-        margin-left: 39%;
-        top: 48%;
-        left: 50%;
+        margin-left: 0px;
+        top: 55%;
+        left: 60%;
         position: absolute;
-        transform: translate(-50%, -25%);
+        transform: translate(-40%, -40%);
+        justify-content: space-between;
     }
     
     .label_logo img{
-        width: 15%;
-        height: 35%;
+         width: 100%;
         object-fit: contain;
         padding: 3px;
+        align-items: center;
+
     }
 }
